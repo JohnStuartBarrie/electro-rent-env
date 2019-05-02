@@ -296,6 +296,11 @@ module.exports = function(webpackEnv) {
     module: {
       strictExportPresence: true,
       rules: [
+        {
+          test: /\.stories.js?$/,
+          loaders: [require.resolve('@storybook/addon-storysource/loader')],
+          enforce: 'pre',
+        },
         // Disable require.ensure as it's not a standard language feature.
         { parser: { requireEnsure: false } },
 

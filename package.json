@@ -88,12 +88,14 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
-    "enzyme": "^3.9.0",
     "@storybook/addon-actions": "^5.0.10",
+    "@storybook/addon-info": "^5.0.11",
     "@storybook/addon-links": "^5.0.10",
+    "@storybook/addon-storysource": "^5.0.11",
     "@storybook/addons": "^5.0.10",
     "@storybook/react": "^5.0.10",
     "babel-loader": "^8.0.5",
+    "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "enzyme-to-json": "^3.3.5"
   },
@@ -108,13 +110,17 @@
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
-    "setupFilesAfterEnv": ["<rootDir>/config/jest/enzymeSetup.js"],
+    "setupFilesAfterEnv": [
+      "<rootDir>/config/jest/enzymeSetup.js"
+    ],
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
       "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
     ],
     "testEnvironment": "jest-environment-jsdom-fourteen",
-    "testPathIgnorePatterns": ["<rootDir>/config/jest/enzymeSetup.js"],
+    "testPathIgnorePatterns": [
+      "<rootDir>/config/jest/enzymeSetup.js"
+    ],
     "transform": {
       "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
