@@ -1,5 +1,7 @@
 import React from 'react';
 import Page404 from './view/page/page_404.js';
+import HomePage from './view/page/page_home.js';
+
 import PageTest2 from './view/page/page_test2.js';
 import { Switch, Route, Redirect, BrowserRouter as Router, Link } from 'react-router-dom';
 
@@ -28,6 +30,11 @@ function App() {
           <Route
             path="/404"
             render={matchProps => <Page404 {...matchProps} />}
+          />
+          <Route
+            exact
+            path="/"
+            render={matchProps => <HomePage {...matchProps} />}
           />
           <Route
             path="*"
