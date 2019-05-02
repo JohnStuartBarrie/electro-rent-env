@@ -11,7 +11,7 @@ storiesOf('Button', module)
       header: false,
       source:true,
       text: `
-            This is a simple and dodgy button
+        This is a simple and dodgy button
       `
     }
   })
