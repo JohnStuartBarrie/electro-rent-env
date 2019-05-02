@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render a InfoText 1`] = `
+<div>
+  Digging Electro Rent
+  <p>
+    Hello Jest!
+  </p>
+</div>
+`;

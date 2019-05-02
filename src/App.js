@@ -1,25 +1,19 @@
 import React from 'react';
+import TopNav from './view/partial/top_nav.js';
+
 import Page404 from './view/page/page_404.js';
 import HomePage from './view/page/page_home.js';
 
 import PageTest2 from './view/page/page_test2.js';
-import { Switch, Route, Redirect, BrowserRouter as Router, Link } from 'react-router-dom';
+import { Switch, Route, Redirect, BrowserRouter as Router } from 'react-router-dom';
 
 import './app.scss';
 
 function App() {
-
   return (
     <div className="App">
       <Router>
-      <nav>
-          <ul>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/fr/store'>Page2 fr</Link></li>
-            <li><Link to='/en/store'>Page2 en</Link></li>
-            <li><Link to='/nonexistanturl'>broken link</Link></li>
-          </ul>
-        </nav>
+        <TopNav/>
         <Switch>
           <Route
             path="/:lang/store"
