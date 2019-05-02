@@ -1,20 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
-import Welcome from './components/welcome.js';
-import Button from './components/button.js';
+import Page404 from './view/page/page_404.js';
+import PageTest2 from './view/page/page_test2.js';
+import { Switch, Route, Redirect, BrowserRouter as Router, Link } from 'react-router-dom';
 
-import './App.css';
+import './app.scss';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Welcome />
-        <p>
-          <Button onClick={()=> alert('this is a fake button')}>Alert Button</Button>
-        </p>
-      </header>
+      <Router>
+      <nav>
+          <ul>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/fr/store'>Page2 fr</Link></li>
+            <li><Link to='/en/store'>Page2 en</Link></li>
+            <li><Link to='/nonexistanturl'>broken link</Link></li>
+          </ul>
+        </nav>
+        <Switch>
+          <Route
+            path="/:lang/store"
+            render={matchProps => (
+              <PageTest2 {...matchProps} />
+            )}
+          />
+          <Route
+            path="/404"
+            render={matchProps => <Page404 {...matchProps} />}
+          />
+          <Route
+            path="*"
+            render={() => {
+              return <Redirect to="/404" push />;
+            }}
+          />
+        </Switch>
+      </Router>
     </div>
   );
 }
