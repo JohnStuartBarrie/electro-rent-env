@@ -2,7 +2,9 @@
 
 exports[`render a Button 1`] = `
 <Button>
-  <button>
+  <button
+    className="secondary button"
+  >
     My Button
   </button>
 </Button>
