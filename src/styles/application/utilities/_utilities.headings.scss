@@ -1,0 +1,9 @@
+// Headings helpers
+// ================
+
+@for $i from 1 through 6 {
+
+  .u-h#{$i} { // eg. .u-h1
+    @extend h#{$i}; // eg. @extend h1
+  }
+}

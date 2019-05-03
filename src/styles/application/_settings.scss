@@ -1,0 +1,117 @@
+//  Design Tokens
+//  -----------------------------
+//
+//  Table of Contents:
+//
+//   1. Color
+//   2. Background Color
+//   3. Text Color
+//   4. Border Color
+//   5. Font
+//   6. Font Size
+//   7. Line Height
+//   8. Opacity
+//   9. Spacing
+//  10. Radius
+//  11. Sizing
+//  12. Shadow
+//  13. Media Query
+//  14. Z-index
+//  15. Animation
+
+
+// 1. Color
+// --------
+
+// Brand Colors
+$brand-persimmon:             #F46040;
+$brand-peacock:               #0785BA;
+$brand-caribbean:             #32D7ED;
+$brand-water:                 #B2CEE3;
+$brand-sky:                   #C2E1F8;
+$brand-grenadier:             #D92700;
+$brand-persian:               #00B987;
+
+$brand-charcoal:              #293338;
+$brand-midnight:              #3D4E55;
+$brand-smoke:                 #485B63;
+$brand-dove:                  #A3ADB1;
+$brand-moonlight:             #F4F4F3;
+
+$brand-olive:                 #B6C5A2;
+$brand-mustard:               #E0D98A;
+$brand-oatmeal:               #D6D6C6;
+
+$brand-white:                 #FFFFFF;
+$brand-black:                 #000000;
+$brand-grey1:                 #F3F5F8;
+$brand-grey2:                 #D5D7DA;
+$brand-grey3:                 #858F93;
+
+// Scope colours to settings
+$primary:                     $brand-persimmon;
+$secondary:                   $brand-midnight;
+$tertiary:                    $brand-charcoal;
+
+// Palette map - useful for looping through to generate modifiers.
+$palette: (
+  'primary':                  $primary,
+  'secondary':                $secondary,
+  'tertiary':                 $tertiary
+);
+
+
+// 2. Background Color
+// -------------------
+
+$color-background:            $brand-white;             // Default background color for the whole app.
+$color-background-alt:        $brand-grey1;             // Second default background color for the app.
+$color-background-inverse:    $brand-midnight;          // Alternative background color for dark portions of the app.
+
+
+// 3. Text Color
+// -------------
+
+$color-text-body:             $brand-black;             // Body text color.
+$color-text-heading:          $brand-black;             // Heading text color.
+$color-text-special:          $brand-persian;           // Highlighted text color.
+$color-text-search:           $brand-dove;              // Search text color.
+$color-text-weak:             $brand-grey3;             // Text purposefully de-emphasized to create visual hierarchy.
+$color-text-link:             $brand-black;             // Text link color.
+$color-text-link-hover:       $brand-persimmon;         // Text link hover color.
+$color-text-link-inverse:     $brand-white;             // Alt link text link color for dark portions of the app.
+$color-text-link-inverse-hover: $brand-persimmon;       // Alt link text link hover color
+
+
+// 4. Border Color
+// ---------------
+
+$color-border:                $brand-grey2;             // Default border color for UI elements.
+$color-border-inverse:        $brand-charcoal;          // Alternative border color for dark portions of the app.
+
+
+// 5. Font
+// -------
+
+$font-family-heading:         'Lato',
+                              -apple-system,
+                              BlinkMacSystemFont,
+                              'Segoe UI',
+                              Helvetica,
+                              Arial,
+                              sans-serif,
+                              'Apple Color Emoji',
+                              'Segoe UI Emoji',
+                              'Segoe UI Symbol';
+$font-family-body:            'Roboto',
+                              -apple-system,
+                              BlinkMacSystemFont,
+                              'Segoe UI',
+                              Helvetica,
+                              Arial,
+                              sans-serif,
+                              'Apple Color Emoji',
+                              'Segoe UI Emoji',
+                              'Segoe UI Symbol';
+
+$font-weight-bold:            400;

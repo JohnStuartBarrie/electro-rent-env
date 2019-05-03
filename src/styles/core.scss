@@ -1,0 +1,13 @@
+// Kyan Front-end Boilerplate
+// ==========================
+// Import all settings, Foundation and our application.
+
+@import './application/settings';                     // Application settings                 - Edit as you wish
+@import './foundation/foundation.settings';           // Foundation settings                  - Edit as you wish
+
+@import '~foundation-sites/scss/foundation';          // Foundation core 'node_modules'       - Do not edit
+@import './foundation/foundation.includes';           // Foundation includes                  - Edit as you wish
+
+// @import './vendor/vendor';                         // Third-party plugins and extensions   - Edit as you wish
+
+@import './application/application';                  // Application core                     - Edit as you wish

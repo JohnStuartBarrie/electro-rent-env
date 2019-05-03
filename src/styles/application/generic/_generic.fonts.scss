@@ -1,0 +1,66 @@
+// Font declarations
+// =================
+
+@font-face {
+  font-family: 'UntitledSerif';
+  src: url('../fonts/UntitledSerifWeb-Regular.woff2') format('woff2'),
+       url('../fonts/UntitledSerif-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UntitledSerif';
+  src: url('../fonts/UntitledSerifWeb-RegularItalic.woff2') format('woff2'),
+       url('../fonts/UntitledSerif-RegularItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BuenosAires';
+  src: url('../fonts/BuenosAires-Light.woff2') format('woff2'),
+       url('../fonts/BuenosAires-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BuenosAires';
+  src: url('../fonts/BuenosAires-LightItalic.woff2') format('woff2'),
+       url('../fonts/BuenosAires-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BuenosAires';
+  src: url('../fonts/BuenosAires-Regular.woff2') format('woff2'),
+       url('../fonts/BuenosAires-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BuenosAires';
+  src: url('../fonts/BuenosAires-Italic.woff2') format('woff2'),
+       url('../fonts/BuenosAires-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BuenosAires';
+  src: url('../fonts/BuenosAires-Bold.woff2') format('woff2'),
+       url('../fonts/BuenosAires-Bold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BuenosAires';
+  src: url('../fonts/BuenosAires-BoldItalic.woff2') format('woff2'),
+       url('../fonts/BuenosAires-BoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
