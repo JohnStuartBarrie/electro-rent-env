@@ -93,6 +93,9 @@ $color-border-inverse:        $brand-charcoal;          // Alternative border co
 // 5. Font
 // -------
 
+@import url('https://fonts.googleapis.com/css?family=Lato:300,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500,700');
+
 $font-family-heading:         'Lato',
                               -apple-system,
                               BlinkMacSystemFont,
@@ -114,4 +117,13 @@ $font-family-body:            'Roboto',
                               'Segoe UI Emoji',
                               'Segoe UI Symbol';
 
-$font-weight-bold:            400;
+$font-weight-light:           300;                      // Used for headings only.
+$font-weight-regular:         400;                      // Used for body only.
+$font-weight-medium:          500;                      // Used for body only.
+$font-weight-bold:            700;                      // Used for headings and body.
+
+
+// 6. Font Size
+// ------------
+
+

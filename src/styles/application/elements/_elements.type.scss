@@ -1,15 +1,18 @@
 // Type element styles
 // ===================
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  //font-family: $headingFontstack;
-  //font-weight: 400;
+h1, .h1 {
+  font-family: $font-family-heading;
   color: $color-text-heading;
+  font-weight: 300;
   //line-height: 1.25;
 }
 
-h1, .h1 {
-
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: $font-family-body;
+  font-weight: 700;
+  color: $color-text-heading;
+  //line-height: 1.25;
 }
 
 h2, .h2 {

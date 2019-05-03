@@ -7,8 +7,6 @@ import HomePage from './view/page/page_home.js';
 import PageTest2 from './view/page/page_test2.js';
 import { Switch, Route, Redirect, BrowserRouter as Router } from 'react-router-dom';
 
-import './app.scss';
-
 function App() {
   return (
     <div className="App">
