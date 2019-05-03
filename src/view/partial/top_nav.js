@@ -9,6 +9,7 @@ class TopNav extends React.Component {
           <ul>
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/fr/store'>Test Page</Link></li>
+            <li><Link to='/kentico'>Kentico Page</Link></li>
             <li><Link to='/nonexistanturl'>Broken Link</Link></li>
           </ul>
       </nav>
