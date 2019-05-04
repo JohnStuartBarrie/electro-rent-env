@@ -29,7 +29,7 @@ export const fetch_kentico = ()=> {
   
   let unsubscribe = new Subject();
 
-  var query = KenticoClient.items()
+  let query = KenticoClient.items()
     .orderParameter('elements.product_name')
     .type('coffee')
 

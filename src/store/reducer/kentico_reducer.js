@@ -1,7 +1,7 @@
 import { KenticoConstants } from '../../constant/action_constants'
 
 const initialState = {
-  kenticoData: {},
+  data: {},
   isFetching: false,
   isError: false
 };
@@ -12,8 +12,7 @@ const kenticoReducer = (state = initialState, action) => {
       state = { ...state }
       break;
     case KenticoConstants.FETCHED_COFFEE :
-      state = { ...state, kenticoData: action.data }
-      console.log(state)
+      state = { ...state, data: action.data }
       break;
     default :
   }
