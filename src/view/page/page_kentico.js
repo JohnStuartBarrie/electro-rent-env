@@ -23,7 +23,7 @@ class PageKentico extends React.Component {
   }
 
   coffeeItem (coffee, index) {
-    return (<li key={index} >coffee : { coffee.productName.value }
+    return (<li key={index} > { coffee.productName.value }
       <p>{ this.coffeeImage(coffee) }</p>
     </li>);
   }
