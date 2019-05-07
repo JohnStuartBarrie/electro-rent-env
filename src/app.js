@@ -10,7 +10,6 @@ import PageKentico from './view/page/page_kentico.js';
 import { Switch, Route, Redirect, BrowserRouter as Router } from 'react-router-dom';
 
 import store from "./store";
-import './app.scss';
 
 function App() {
   return (

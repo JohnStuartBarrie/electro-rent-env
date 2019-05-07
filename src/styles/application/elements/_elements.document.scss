@@ -1,0 +1,16 @@
+// Document element styles
+// =======================
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: $font-family-body;
+  color: $color-text-body;
+  font-size: $font-size-body;
+  font-weight: $font-weight-regular;
+  background-color: $color-background;
+}

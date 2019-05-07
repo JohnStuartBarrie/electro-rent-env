@@ -1,0 +1,67 @@
+// Application
+// ===========
+// Import all project specific styles.
+
+
+
+// Settings
+// ========
+// Used with preprocessors and contain font, colors definitions, etc.
+// Already included in `core.css`, but has been replicated here for added clarity of layering.
+
+// @import 'settings';                             // Import all settings.
+
+
+
+// Tools
+// =====
+// Globally used mixins and functions.
+// It's important not to output any CSS in the first 2 layers.
+
+@import 'tools/tools.override';                 // Chain classes together for a greater specificity.
+
+
+
+// Generic
+// =======
+// Reset and/or normalize styles, box-sizing definition, etc.
+// This is the first layer which generates actual CSS.
+
+@import 'generic/generic.shared';               // Shared global commonalities.
+
+
+
+// Elements
+// ========
+// Styling for bare HTML elements (like H1, A, etc.).
+// These come with default styling from the browser so we can redefine them here.
+
+@import 'elements/elements.document';           // Page-level styles (HTML, body etc).
+@import 'elements/elements.forms';              // Form inputs, textareas.
+@import 'elements/elements.links';              // Hyperlinks.
+@import 'elements/elements.lists';              // Lists.
+@import 'elements/elements.media';              // Media elements, img, svg, video, etc.
+@import 'elements/elements.quotes';             // Blockquotes, cite, etc.
+@import 'elements/elements.tables';             // Table element styles.
+@import 'elements/elements.type';               // All type styles.
+@import 'elements/elements.dividers';           // Styled <hr> elements.
+
+
+
+// Components
+// ==========
+// Specific UI components.
+// This is where majority of our work takes place and our UI components are often composed of Objects and Components.
+
+// @import 'components/components.site-header';      // Core header - desktop.
+
+
+
+// Utilities
+// =========
+// Utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class.
+
+// @import 'utilities/utilities.headings';         // Generate heading helper classes.
+@import 'utilities/utilities.colours';          // Colour helpers for setting background colour and text colour.
+@import 'utilities/utilities.spacing';          // Spacing helpers for standardised padding/margins etc.
+

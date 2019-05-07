@@ -1,0 +1,51 @@
+// Kyan Front-end Boilerplate
+// ==========================
+// Import all settings, Foundation and our application.
+
+@import 'application/settings';                     // Application settings                 - Edit as you wish
+@import 'foundation/foundation.settings';           // Foundation settings                  - Edit as you wish
+
+@import '~foundation-sites/scss/foundation';        // Foundation core 'node_modules'       - Do not edit
+@import 'foundation/foundation.includes';           // Foundation includes                  - Edit as you wish
+
+// @import './vendor/vendor';                       // Third-party plugins and extensions   - Edit as you wish
+
+@import 'application/application';                  // Application core                     - Edit as you wish
+
+/* TEMP: */
+
+$testColor: #2196F3;
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: $testColor;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
