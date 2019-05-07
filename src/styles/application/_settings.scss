@@ -126,4 +126,28 @@ $font-weight-bold:            700;                      // Used for headings and
 // 6. Font Size
 // ------------
 
+$font-size-1:                 4rem;                     // Constant typography token for font size 1.
+$font-size-2:                 2.6rem;                   // Constant typography token for font size 2.
+$font-size-3:                 2.4rem;                   // Constant typography token for font size 3.
+$font-size-4:                 2rem;                     // Constant typography token for font size 4.
+$font-size-5:                 2rem;                     // Constant typography token for font size 5.
+
+$font-size-body:              1.6rem;                   // Constant typography token for body copy font size.
+$font-size-small:             1.4rem;                   // Constant typography token for small copy.
+$font-size-smallest:          1.2rem;                   // Constant typography token for smallest copy.
+
+$font-size-button:            1.4rem;                   // Constant typography token for button text size.
+$font-size-button-large:      1.8rem;                   // Constant typography token for large button text size.
+
+
+// 7. Line Height
+// --------------
+
+$line-height-heading:         1.2;                      // H1 - H6 line height.
+$line-height-reset:           1;                        // Remove extra leading.
+$line-height-body:            1.6;                      // Body copy line height.
+
+
+// 8. Opacity
+// ----------
 

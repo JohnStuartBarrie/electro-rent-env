@@ -8,9 +8,9 @@ html {
 }
 
 body {
-  //font-family: $fontstack;
+  font-family: $font-family-body;
   color: $color-text-body;
-  //font-size: 1.6rem;
-  //font-weight: 300;
+  font-size: $font-size-body;
+  font-weight: $font-weight-regular;
   background-color: $color-background;
 }
